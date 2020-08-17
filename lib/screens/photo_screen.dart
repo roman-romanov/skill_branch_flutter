@@ -3,7 +3,7 @@ import 'package:FlutterGalleryApp/widgets/photo.dart';
 import 'package:FlutterGalleryApp/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'feed_screens.dart';
+import 'feed_screen.dart';
 
 class FullScreenImage extends StatefulWidget {
   final String name;

@@ -141,7 +141,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/screens/feed_screens.dart';
+import '../lib/screens/feed_screen.dart';
 import '../lib/screens/photo_screen.dart';
 import '../lib/widgets/widgets.dart';
 

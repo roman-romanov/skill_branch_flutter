@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:FlutterGalleryApp/screens/feed_screens.dart';
+import 'package:FlutterGalleryApp/screens/feed_screen.dart';
 //import 'package:flutter/rendering.dart';
 
 class MyApp extends StatelessWidget {
