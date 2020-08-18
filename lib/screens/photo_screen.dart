@@ -19,6 +19,13 @@ class FullScreenImage extends StatefulWidget {
 }
 
 class _FullScreenImageState extends State<FullScreenImage> {
+   String name;
+  @override
+  void initState() {
+    super.initState();
+    name = widget.name;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,11 +64,11 @@ class _FullScreenImageState extends State<FullScreenImage> {
                           color: AppColors.dodgerBlue,
                         ),
                         child: Padding(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 35, vertical: 10),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 35, vertical: 10),
                           child: Text('Save',
-                              style:
-                                  AppStyles.h4.copyWith(color: AppColors.white)),
+                              style: AppStyles.h4
+                                  .copyWith(color: AppColors.white)),
                         ),
                       ),
                     ),
@@ -73,11 +80,11 @@ class _FullScreenImageState extends State<FullScreenImage> {
                           color: AppColors.dodgerBlue,
                         ),
                         child: Padding(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 35, vertical: 10),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 35, vertical: 10),
                           child: Text('Visit',
-                              style:
-                                  AppStyles.h4.copyWith(color: AppColors.white)),
+                              style: AppStyles.h4
+                                  .copyWith(color: AppColors.white)),
                         ),
                       ),
                     ),
@@ -105,13 +112,15 @@ class _FullScreenImageState extends State<FullScreenImage> {
   Widget _buildPhotoMeta() {
     return Row(
       children: <Widget>[
-        UserAvatar('https://s1.1zoom.ru/big7/640/Scenery_Mountains_Lake_Grasslands_Canada_Banff_512435_2560x1687.jpg'),
+        UserAvatar(
+            'https://s1.1zoom.ru/big7/640/Scenery_Mountains_Lake_Grasslands_Canada_Banff_512435_2560x1687.jpg'),
         SizedBox(width: 6),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(widget.name ?? 'Roman Ablaev', style: AppStyles.h1Black),
+            Text(name ?? 'Roman Ablaev',
+                style: AppStyles.h1Black),
             Text(widget.userName ?? '@designer_79',
                 style: AppStyles.h5Black.copyWith(color: AppColors.manatee)),
           ],
